@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	background-color: #000000;
+}
+
+main{
+	justify-self: center;
+	align-self: center;
+	
+}
+
+.main__content{
+	display: flex;
+	flex-direction: column;
+}
+
+.main__title{
+	font-size: 54px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #21eb00;
+}
+
+.main__title--small{
+	font-size: 34px;
+}
+
+.main__subtitle{
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 15px;
+	color: #FFF;
+}
+
+.main__data{
+	width: 290px;
+	height: 50px;
+	padding-left: 25px;
+	border-radius: 20px;
+	margin-bottom: 15px;
+	border: none;
+	text-transform: uppercase;
+	color: #FFF;
+	background-color: #191a18;
+	
+}
+
+.main__btn{
+	width: 315px;
+	padding-left: 0;
+	text-transform: none;
+	font-size: 24px;
+	font-weight: 700;
+
+	color: #000;
+	background-color: #21eb00;
+}
+
+.main__btn--2{
+	width: auto;
+	padding: 0 20px;
+}
+/* 
+----------------------------------------------------------------------------- contador.html ---------------------------------------------------------------- */
+
+header{
+	height: 60px;
+	margin: 20px 16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.counter-content{
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 80px;
+}
+
+.counter__title{
+	font-size: 60px;
+	text-align: center;
+	color: #191918;
+}
+
+.counter__datas{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.counter__number{
+	font-size: 80px;
+	font-weight: 400;
+	text-align: center;
+	color: #FFF;
+}
+
+.counter__text{
+	text-align: center;
+	color: #21eb00;
+}
+
+section{
+	margin-bottom: 20px;
+}
+
+@media (min-width:900px){
+	.counter__datas{
+		flex-direction: row;
+		justify-content: space-evently;
+		margin: 0 16px;
+	}
+
+	section{
+		margin-left: 70px;
+	}
+
+	.counter-content{
+		margin-top: 70px;
+	}
+
+	.counter__number{
+		font-size: 150px;
+		font-weight: 400;
+		text-align: center;
+		color: #FFF;
+	}
+	
+	.counter__text{
+		text-align: center;
+		font-weight: 400;
+		color: #21eb00;
+	}
+}
